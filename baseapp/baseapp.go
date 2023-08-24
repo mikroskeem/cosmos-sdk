@@ -433,11 +433,11 @@ func (app *BaseApp) setMinGasPrices(gasPrices sdk.DecCoins) {
 	app.minGasPrices = gasPrices
 }
 
-func (app *BaseApp) setHaltHeight(haltHeight uint64) {
+func (app *BaseApp) SetHaltHeight(haltHeight uint64) {
 	app.haltHeight = haltHeight
 }
 
-func (app *BaseApp) setHaltTime(haltTime uint64) {
+func (app *BaseApp) SetHaltTime(haltTime uint64) {
 	app.haltTime = haltTime
 }
 

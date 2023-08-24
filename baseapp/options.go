@@ -48,12 +48,12 @@ func SetQueryGasLimit(queryGasLimit uint64) func(*BaseApp) {
 
 // SetHaltHeight returns a BaseApp option function that sets the halt block height.
 func SetHaltHeight(blockHeight uint64) func(*BaseApp) {
-	return func(bapp *BaseApp) { bapp.setHaltHeight(blockHeight) }
+	return func(bapp *BaseApp) { bapp.SetHaltHeight(blockHeight) }
 }
 
 // SetHaltTime returns a BaseApp option function that sets the halt block time.
 func SetHaltTime(haltTime uint64) func(*BaseApp) {
-	return func(bapp *BaseApp) { bapp.setHaltTime(haltTime) }
+	return func(bapp *BaseApp) { bapp.SetHaltTime(haltTime) }
 }
 
 // SetMinRetainBlocks returns a BaseApp option function that sets the minimum
